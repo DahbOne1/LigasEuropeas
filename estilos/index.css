@@ -16,6 +16,7 @@ main{
 }
 
 section{
+    height: 100vh;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -304,9 +305,13 @@ footer{
         padding: 80px 0;
         flex-direction: column;
         scroll-snap-align: none;
+        height: 200vh;
     }
 
     /*Esitlos de la primera sección*/
+    #inicio{
+        height: 100vh;
+    }
 
     #inicio h1{
         font-size: 30px;
