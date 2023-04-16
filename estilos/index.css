@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;300;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.934);
+    text-align: center;
+    font-family: 'Anuphan', sans-serif;
+}
+
+main{
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y mandatory;  
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #191E22;
+    scroll-snap-align: start;
+}
+
+img{
+    background: none;
+}
+
+span{
+    color: rgba(255, 255, 255, 0.183);
+    transition: color 1s;
+}
+
+span:hover{
+    color: rgba(255, 255, 255, 0.637);
+    cursor: default;
+}
+
+/*Esitlos de la primera sección*/
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio h1{
+    margin-bottom: 30px;
+    font-size: 73px;
+}
+
+#inicio img{
+    height: 120px;
+    margin: 0 15px;
+    margin-top: 10px;
+}
+
+#inicio hr{
+    width: 85%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.701);
+    border-radius: 4px;
+}
+
+#cont-leaguesWhite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/*Esitlos de las demas secciónes*/
+/*Estilos de la pimera sección*/
+.imgLogo{
+    width: 180px;
+}
+
+.cont-league{
+    height: 65%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: -1px 2px 48px -4px rgba(255,255,255,0.06);
+}
+
+.cont-league img{
+    margin-bottom: 60px;
+}
+
+.cont-league span{
+    margin-bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #191E22;
+    font-size: 35px;
+    height: 12%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: bolder;
+}
+
+
+#leaguePremiere{
+    background-color: #C70A56;
+}
+
+#leagueLaLiga{
+    background-color: #19B1C9;
+}
+
+#leagueBundesliga{
+    background-color: #00FE82;
+}
+
+#leagueSerieA{
+    background-color: #BABB17;
+}
+
+#leagueLiga1{
+    background-color: #396183;
+}
+
+#leagueLiga1 img{
+    width: 150px;
+}
+
+/*Estilos de la seccion de estadisticas*/
+.cont-estadisticas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.8fr repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 10px;
+    align-items: center;
+    height: 65%;
+    width: 60%;
+}
+
+.cont-estadisticas div{
+    border-radius: 8px; 
+}
+
+
+.cont-estadisticas img{
+    width: 65px;
+}
+
+.div1, .div2, .div3, .div4{
+    background-color: rgba(0, 0, 0, 0.480);
+    padding: 30px 0px;
+    transition: background 1s, border 2s;
+    box-shadow: -1px 2px 48px -4px rgba(255,255,255,0.005);
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 /2; 
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.div4 { 
+    grid-area: 2 / 1 / 3 / 4; 
+    display: flex;
+    flex-direction: column;
+}
+
+.div5 { 
+    grid-area: 3 / 1 / 4 / 4; 
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover{
+    border-radius: 2px;
+    background-color: rgba(66, 52, 52, 0.183);
+}
+
+.logosWhite{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logosWhite div{
+    padding: 25px 0;
+    transition: background 1.5s, border 1.5s;
+}
+
+.logosWhite div:hover{
+    background-color: #191E22;
+    border-radius: 0;
+}
+
+
+.logosWhite div p:first-child{
+    font-size: 15px;
+}
+
+.logosWhite div p:last-child{
+    font-size: 12px;
+}
+
+.div4 p{
+    font-size: 12px;
+    margin: 2px;
+}
+
+.div4 p:last-child{
+    font-size: 18px;
+}
+/*Estilos del footer*/
+footer{
+    background-color: black;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+/*Estilos para talet*/
+@media screen and (max-width:768px){
+    /*Esitlos de la primera sección*/
+    #inicio h1{
+        font-size: 60px;
+    }
+
+    #inicio img{
+        height: 80px;
+        margin: 0 10px;
+        margin-top: 8px;
+    }
+
+    /*Esitlos de las demas secciónes*/
+    /*Estilos de la pimera sección*/
+    .imgLogo{
+        width: 180px;
+    }
+
+    #leagueLiga1 img{
+        width: 130px;
+    }
+
+    .cont-league{
+        height: 65%;
+        width: 25%;
+    }
+
+    .cont-league img{
+        margin-bottom: 55px;
+    }
+
+    .cont-league span{
+        font-size: 30px;
+    }
+    /*Estilos de la seccion de estadisticas*/
+    .cont-estadisticas{
+        grid-column-gap: 35px;
+    }
+
+    .cont-estadisticas img{
+        width: 45px;
+    }
+    
+    .div1 {
+        padding: 7px 0px;
+    }
+    
+    .div2, .div3, .div4{
+        padding: 17px 0px;
+    }
+
+    .logosWhite div p:first-child{
+        font-size: 13px;
+    }
+    
+    .logosWhite div p:last-child{
+        font-size: 11px;
+    }
+    
+    .div4 p{
+        font-size: 9px;
+    }
+    
+    .div4 p:last-child{
+        font-size: 15px;
+    }
+
+}
+
+/*Estilos para celular*/
+@media screen and (max-width:426px){
+    main{
+        scroll-snap-type: none;  
+    }
+
+    section{
+        padding: 80px 0;
+        flex-direction: column;
+        scroll-snap-align: none;
+    }
+
+    /*Esitlos de la primera sección*/
+
+    #inicio h1{
+        font-size: 30px;
+    }
+
+    #inicio img{
+        height: 60px;
+        margin: 0 8px;
+    }
+
+    #inicio span{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #cont-leaguesWhite{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    /*Estilos de kas tarjetas de las ligas*/
+    .cont-league{
+        width: 80%;
+        display: flex;
+        height: 480px;
+    }
+    
+    .imgLogo{
+        width: 250px;
+    }
+
+    .cont-league img{
+        margin-bottom: 80px;
+    }
+
+    #leagueLiga1 img{
+        width: 180px;
+    }
+    
+
+    /*Estilos de la seccion de estadisticas*/
+    .cont-estadisticas{
+        padding: 30px 0;
+        grid-column-gap: 5px;
+        width: 90%;
+        height: 500px;
+    }
+
+    #laLiga, #serieA{
+        flex-direction: column-reverse;
+    }
+
+    .div1 {
+        padding: 25px 0px;
+    }
+    
+    .div2, .div3, .div4{
+        padding: 35px 0px;
+    }
+
+    .div4{
+        flex-wrap: 50%;
+    }
+
+    .logosWhite{
+        flex-wrap: wrap;
+    }
+
+    .logosWhite div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:426px){
+    section{
+        padding: 50px 0;
+    }
+
+    .cont-league{
+        height: 430px;
+    }
+
+    .div1, .div3 {
+        padding: 35px 0px;
+    }
+    
+    .div2, .div4{
+        padding: 45px 0px;
+    }
+
+}
+
+
