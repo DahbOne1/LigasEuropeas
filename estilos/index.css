@@ -75,12 +75,12 @@ span:hover{
 /*Esitlos de las demas secciónes*/
 /*Estilos de la pimera sección*/
 .imgLogo{
-    width: 180px;
+    width: 200px;
 }
 
 .cont-league{
     height: 65%;
-    width: 20%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -90,7 +90,7 @@ span:hover{
 }
 
 .cont-league img{
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 }
 
 .cont-league span{
@@ -108,6 +108,11 @@ span:hover{
 
 #leaguePremiere{
     background-color: #C70A56;
+}
+
+#leaguePremiere img{
+    width: 250px;
+    margin-bottom: 52px;
 }
 
 #leagueLaLiga{
@@ -225,8 +230,8 @@ footer{
 }
 
 
-/*Estilos para talet*/
-@media screen and (max-width:768px){
+/*Estilos para tablet*/
+@media screen and (max-width:769px){
     /*Esitlos de la primera sección*/
     #inicio h1{
         font-size: 60px;
@@ -240,8 +245,24 @@ footer{
 
     /*Esitlos de las demas secciónes*/
     /*Estilos de la pimera sección*/
+    .cont-league{
+        height: 56%;
+        width: 36%;
+    }
+
+    .cont-estadisticas{
+        height: 56%;
+        width: 60%;
+    }
+    
+
     .imgLogo{
         width: 180px;
+    }
+
+    #leaguePremiere img{
+        width: 180px;
+        margin-bottom: 55%;
     }
 
     #leagueLiga1 img{
@@ -254,7 +275,7 @@ footer{
     }
 
     .cont-league img{
-        margin-bottom: 55px;
+        margin-bottom: 55%;
     }
 
     .cont-league span{
@@ -350,6 +371,11 @@ footer{
     #leagueLiga1 img{
         width: 180px;
     }
+
+    #leaguePremiere img{
+        width: 280px;
+        margin-bottom: 15%;
+    }
     
 
     /*Estilos de la seccion de estadisticas*/
@@ -386,6 +412,9 @@ footer{
 }
 
 @media screen and (max-width:426px){
+
+
+
     section{
         padding: 50px 0;
     }
@@ -404,4 +433,9 @@ footer{
 
 }
 
+@media screen and (max-width:321px){
+    #leaguePremiere img{
+        width: 240px;
+    }
+}
 
